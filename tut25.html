@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position: static(static), absolute, relative, fixed, sticky */
+        .container{
+            border: 2px solid black;
+            background-color: yellow;
+            height: 33335px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /* relative: relative to its current position and will leave a gap at its normal position.*/
+            /* position: relative; */
+            /* top: 34px;
+            left: 34px; */
+
+            /* absolute: relativeto its parent's positon */
+            /* position: absolute; */
+            /* top: 34px;
+            left: 34px; */
+
+            /* fixed: its position iis fixed in the browser window, how do you keep scrolling it will stay there only. */
+            /* position: fixed; */
+            /* right: 4px; */
+
+            /* sticky:that thing sitcks there only */
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

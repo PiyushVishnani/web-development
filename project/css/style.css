@@ -1,0 +1,100 @@
+*{
+    /* background-color: aqua; */
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/project/img/bg.png);
+    /* background-repeat: no-repeat; */
+    background-attachment: scroll;
+    background-size: cover;
+    color: rgb(248, 244, 244);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.left{
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.left img{
+    width: 100px;
+    filter: invert(100%);
+    /* display: block; */
+    margin-left: 20px;
+    margin-top: auto;
+}
+.left div{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+}
+.mid{
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+}
+.right{
+    display: inline-block;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px;
+}
+.navbar li a:hover, .navbar li a:active{
+    text-decoration: underline;
+    color: grey;
+}
+.btn{
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn:hover{
+    background-color: rgb(67, 66, 66);
+}
+.container{
+    border: 2px solid white;
+    margin: 100px 80px;
+    padding: 75px;
+    width: 33%;
+    display: block;
+    border-radius: 28px;
+}
+.form input{
+    text-align: center;
+    display: block;  /*to center the thing through margin auto diplay-block and width should be used first..*/
+    width: 500px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.container h1{
+    text-align: center;
+}
+.form button{
+    display: block;
+    width: 26%;
+    margin: 20px auto;
+}

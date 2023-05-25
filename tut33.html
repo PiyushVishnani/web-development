@@ -1,0 +1,65 @@
+<!-- Mujhe kuch nahi samj me aya iss video me -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <Style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        header::before{
+            content: "";
+            position: absolute;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 344px;
+            justify-content: center;
+        }
+        /* section::before{
+            content: "This is the content";
+        } */
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center  ;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+            <h1>Welcome to coding world</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aut, iste laboriosam sit quaerat molestias iure modi excepturi sapiente dignissimos porro est asperiores officia voluptatum, esse deserunt sequi tempora, ducimus ipsum veniam exercitationem corporis!</p>
+    </section>
+    <hr>
+</body>
+</html>

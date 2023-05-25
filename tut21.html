@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: fantasy;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid rgb(6, 209, 240);
+            margin: 33px auto;
+        }
+        .items{
+            border: 2px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(241, 138, 255);
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            /* clear: both; */
+            clear: left;
+            /* clear: right; */
+            width: 100%;
+        }
+        p,h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nam quia commodi corporis provident delectus molestiae a quis, quam iste similique libero eos aut! Illo repellendus nisi et vero possimus!</p>
+        </div>
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nam quia commodi corporis provident delectus molestiae a quis, quam iste similique libero eos aut! Illo repellendus nisi et vero possimus!</p>
+        </div>
+        <div id="statioinary" class="items">
+            <h3>Statioinary</h3>
+            <p id="stationarypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nam quia commodi corporis provident delectus molestiae a quis, quam iste similique libero eos aut! Illo repellendus nisi et vero possimus!</p>
+        </div>
+        <div id="statioinary" class="items">
+            <h3>Statioinary</h3>
+            <p id="stationarypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nam quia commodi corporis provident delectus molestiae a quis, quam iste similique libero eos aut! Illo repellendus nisi et vero possimus!</p>
+        </div>
+    </div>
+</body>
+</html>
