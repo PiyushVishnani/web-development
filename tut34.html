@@ -13,21 +13,34 @@
             padding: 23px 12px;
             margin: 23px 12px;
             /* border: 2px solid red; */
-            background-color: antiquewhite;
-            box-shadow: 10px 10px green;
-            box-shadow: -10px -10px green;
-            box-shadow: 10px 10px 50px green;
+            /* box-shadow: offset-X offset-Y Color blurRadius spreadRadius  */
+            background-color: rgb(252, 175, 74);
+            /* box-shadow: 10px 10px green; */
+            /* box-shadow: -10px -10px green; */
+            /* box-shadow: 10px 10px 25px green; */
+            /* box-shadow: 10px 10px 25px 30px green; */
+            /* box-shadow: 21px 10px rgba(red, green, blue, alpha); */
+            /* alpha-->how dark the colour should be */
+            /* box-shadow: inset 10px 15px green; */
+            /*for multiple box-shadow */
+            box-shadow: inset 10px 15px 25px green, 10px 15px 25px red; 
+
+        }
+        .card h2{
+            text-shadow:  3px 4px white;
+            text-shadow:  3px 4px 3px white;
+            text-shadow:  -3px -4px 3px white;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="card" id="card1">
-            <h2>Card1</h2>
+            <h2>This is C++ course.</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea facere, magni in aut alias ut explicabo eos, quae aliquid ipsam quia ab optio modi, vero est dolores animi sint hic! Vitae dolor impedit aliquam?</p>
         </div>
         <div class="card" id="card2">
-            <h2>Card2</h2>
+            <h2>This is HTML course.</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, magni. Odio, repellat ad magni ab magnam, nihil illum debitis modi aliquid enim veritatis. Modi, sequi consequuntur iusto enim consectetur quibusdam doloribus deleniti. Ad, ducimus?</p>
         </div>
         <div class="card" id="card3">
