@@ -7,6 +7,40 @@
     <title>Arrays and Objects</title>
 </head>
 <body>
-    
+    <div class="container">
+        Simple si html
+    </div>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = undefined;
+
+
+        let employee = {
+            name:"Piyush",
+            salary: 1000000
+        }
+        console.log(employee);
+        console.log(employee.salary);
+
+
+        let names = [10, 25, 3, "Piyush"];
+        console.log(names);
+        console.log(names[3]);
+        // or to create an array
+        let name = new Array(10, 25, 3, "Piyush");
+        // new keyword is used in javascript to create an object
+        console.log(name.length);
+        name = name.sort();
+        names = names.sort();
+        console.log(name);
+        console.log(names);
+        name.push("this is pushed");
+        console.log(name);
+        // to create an array of specified space=>
+        let space = new Array(23);
+        console.log(space);
+    </script>
 </body>
 </html>
