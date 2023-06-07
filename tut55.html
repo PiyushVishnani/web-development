@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops in JavaScript.
+    </div>
+
+    <script>
+        console.log("This is tutoril 55.");
+        let i;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+
+        let friends = ["Piyush","Vishvajeet", "Aditya"];
+        for(let i =0; i<friends.length; i++){
+            console.log("Hello bro " + friends[i]);
+        }
+        
+        let emp = {
+            name:"Piyush",
+            salary:10000000,
+            height:170
+        }
+        // for-in loop is used to iterate over object in javascript.
+        for (const key in emp) {
+            // console.log('The ${emp}')
+            // yeah print nahi ho rha h
+        }
+
+        // while loop in JS
+        let a=0;
+        while(a<4){
+            console.log(a + " is less than 4");
+            a++;
+        }
+
+        // do-while loop in JS
+            // let j=34;
+            // do{
+            //     console.log(j + ' is less than 4');
+            //     j++;
+            // }while(i<4)
+            
+    </script>
+</body>
+</html>
