@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>streak</title>
+    <title>Manipulating DOM</title>
 </head>
 <body>
-    
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Services</li>
+            <li>More about us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        this is another container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        // nav.innerHTML = "<li>hello</li>";
+        // console.log(nav.innerHTML);
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+        console.log(containers[0]);
+
+        // let sel = document.querySelector('.container');
+        // console.log("selectior returns ", sel);
+        let sel = document.querySelectorAll('.container');
+        console.log("selectior returns ", sel);
+    </script>
 </body>
 </html>
