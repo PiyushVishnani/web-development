@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Dates</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: blanchedalmond;
+            border: 2px solid grey;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let dT = new Date();
+        console.log(dT);
+
+        let dT2 = new Date("2023-06-30");
+        console.log(dT2);
+
+        // let dT3 = new Date(year, month, date, hours, minutes,seconds, milliseconds);
+        let dT3 = new Date(3020,4,6,9,3,2,34);
+        console.log(dT3);
+
+        let yr = dT3.getFullYear();
+        console.log(yr);
+
+        let dt = dT3.getDate();
+        console.log(dt);
+        let mt = dT3.getMonth();
+        console.log(mt);
+
+        let hr = dT3.getHours();
+        console.log(hr);
+        
+        let day = dT3.getDay();
+        console.log(day);
+
+        // dT3.setDate(5);
+
+        setInterval(updateTime, 1000);
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+
+    </script>
 </body>
 </html>
